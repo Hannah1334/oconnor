@@ -1,3 +1,5 @@
+<script>resizeTo(screen.availWidth, screen.availHeight);</script> 
+
 <style>
 body{
 background-color:#ffffff;
@@ -6,146 +8,378 @@ background-repeat:no-repeat !important;
 background-position:right !important; 
 background-size:contain;
 }
-::-webkit-scrollbar {width: 3px; height: 3px;}
+
+::-webkit-scrollbar {width: 4px; height: 4px;}
 ::-webkit-scrollbar-track {background: none;}
-::-webkit-scrollbar-thumb {background: #666666;}
-#imgbox {
+::-webkit-scrollbar-thumb {background: #74756e;}
+
+body:hover #slideholder {
+left:0%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+body:hover #pic {
+left:16%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+body:hover #content {
+left:16%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#slideholder {
 position:absolute;
-width:20%;
+background-color:#767676;
+width:15%;
+height:100%;
+top:0%;
+left:-14%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#smallpic {
+position:relative;
+border:4px solid #5C584F;
+width:30%;
+height:9%;
+top:5%;
+left:32%;
+background-image: url('https://i.imgur.com/uOg9hVk.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:100% 100%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#basicbox {
+position:relative;
+width:80%;
 height:30%;
-left:30%;
-top:17%;
-border:1px solid #000000;
-background-color:#ffffff;
+top:8%;
+left:10%;
+color:#FFFFFF;
+font-size:1.3vh;
+font-family:Yanone Kaffeesatz;
+text-align:center;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
 }
+
 #tabbox1 {
-position:absolute;
-width:15%;
-height:30.3%;
-top:17%;
-left:15%;
+position:relative;
+border-bottom:1px solid #FFFFFF;
+width:80%;
+height:2%;
+top:9%;
+left:10%;
+font-size:1.5vh;
+text-transform:uppercase;
+color:#FFFFFF;
+letter-spacing:3px;
+font-family:Mogra;
+line-height:1.8;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
 }
+
 #tabbox2 {
-position:absolute;
-width:15%;
-height:30.3%;
-top:17%;
-left:50.1%;
+position:relative;
+border-bottom:1px solid #FFFFFF;
+width:80%;
+height:2%;
+top:10%;
+left:10%;
+font-size:1.5vh;
+text-transform:uppercase;
+color:#FFFFFF;
+letter-spacing:3px;
+font-family:Mogra;
+line-height:1.8;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
 }
+
+#tabbox3 {
+position:relative;
+border-bottom:1px solid #FFFFFF;
+width:80%;
+height:2%;
+top:11%;
+left:10%;
+font-size:1.5vh;
+text-transform:uppercase;
+color:#FFFFFF;
+letter-spacing:3px;
+font-family:Mogra;
+line-height:1.8;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox4 {
+position:relative;
+border-bottom:1px solid #FFFFFF;
+width:80%;
+height:2%;
+top:12%;
+left:10%;
+font-size:1.5vh;
+text-transform:uppercase;
+color:#FFFFFF;
+letter-spacing:3px;
+font-family:Mogra;
+line-height:1.8;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox5 {
+position:relative;
+border-bottom:1px solid #FFFFFF;
+width:80%;
+height:2%;
+top:13%;
+left:10%;
+font-size:1.5vh;
+text-transform:uppercase;
+color:#FFFFFF;
+letter-spacing:3px;
+font-family:Mogra;
+line-height:1.8;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox6 {
+position:relative;
+border-bottom:1px solid #FFFFFF;
+width:80%;
+height:2%;
+top:14%;
+left:10%;
+font-size:1.5vh;
+text-transform:uppercase;
+color:#FFFFFF;
+letter-spacing:3px;
+font-family:Mogra;
+line-height:1.8;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox7 {
+position:relative;
+border-bottom:1px solid #FFFFFF;
+width:80%;
+height:2%;
+top:15%;
+left:10%;
+font-size:1.5vh;
+text-transform:uppercase;
+color:#FFFFFF;
+letter-spacing:3px;
+font-family:Mogra;
+line-height:1.8;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox8 {
+position:relative;
+border-bottom:1px solid #FFFFFF;
+width:80%;
+height:2%;
+top:16%;
+left:10%;
+font-size:1.5vh;
+text-transform:uppercase;
+color:#FFFFFF;
+letter-spacing:3px;
+font-family:Mogra;
+line-height:1.8;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox1:hover,#tabbox2:hover,#tabbox3:hover,#tabbox4:hover,#tabbox5:hover,#tabbox6:hover,#tabbox7:hover,#tabbox8:hover {
+background-color:#595357;
+letter-spacing:6px;
+color:#B4F0C6;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#creditbox {
+position:relative;
+width:80%;
+height:16%;
+top:21%;
+left:10%;
+color:#FFFFFF;
+font-size:1.5vh;
+font-family:Yanone Kaffeesatz;
+text-align:center;
+line-height:2.2;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic {
+position:absolute;
+border:4px solid #5C584F;
+background-color:#FFFFFF;
+width:20%;
+height:25%;
+top:13%;
+left:2%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
 #content {
 position:absolute;
+padding:1%;
 overflow:auto;
-padding:2%;
-width:16.05%;
-height:21.66%;
-left:30%;
-top:50%;
+border:4px solid #5C584F;
+background-color:#FFFFFF;
+width:18%;
+height:42%;
+top:42%;
+left:2%;
 color:#000000;
+font-size:1.5vh;
+line-height:1.5;
 font-family:Yanone Kaffeesatz;
-font-size:80%;
-border:1px solid #000000;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
 }
-.tabs1 {
+
+.tabs {
 display:block;
-padding:2%;
 width:100%;
-height:7%;
-margin-top:10%;
-text-align:left;
-color:#ffffff;
-font-family:Mogra;
-font-size:100%;
-text-transform:uppercase;
-background-color:#000000;
+height:100%;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
 }
-.tabs1:hover {
-width:110%;
-margin-left:-10%;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-.tabs2 {
-display:block;
-padding:2%;
-width:100%;
-height:7%;
-margin-top:10%;
-text-align:right;
-color:#ffffff;
-font-family:Mogra;
-font-size:100%;
-text-transform:uppercase;
-background-color:#000000;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-.tabs2:hover {
-width:110%;
-margin-right:-10%;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-#tab1,#tab2,#tab3,#tab4,#tab5,#tab6,#tab7,#tab8,#tab9,#tab10,#tab11,#tab12 {
+
+#tab1,#tab2,#tab3,#tab4,#tab5,#tab6,#tab7,#tab8,#tab9,#tab10,#tab11,#tab12,#tab13,#tab14,#tab15,#tab16 {
 display: none;
 }
+
 a {
-color:#347C17;
+color:#165E00;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
 }
+
+a:hover {
+color:#333333;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
 i {
 color:#666666;
-font-size:90%;
 }
+
 h1 {
 color: #333333;
 border-bottom: 1px dashed #666666;
 font-family: Mogra;
 text-align:center;
-font-size: 100%;
+font-size: 2vh;
 }
+
 b {
-font-size: 100%;
-color:#666666;
+color:#B4F0C6;
+background-color:#5C584F;
+text-transform:uppercase;
+padding:0.5%;
 }
 </style>
 
 <style type="text/css">body, a:hover {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur817.cur), progress !important;}</style>
 <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Mogra|Yanone+Kaffeesatz" rel="stylesheet">
 <script>function changeNavigation(id) {document.getElementById('content').innerHTML=document.getElementById(id).innerHTML}</script>
-<script>function changeNavigation1(id) {document.getElementById('imgbox').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation1(id) {document.getElementById('pic').innerHTML=document.getElementById(id).innerHTML}</script>
 
+<div id="slideholder">
+<div id="smallpic"></div>
+<div id="basicbox">
+<b>Name:</b> Claire O'Connor<br><br>
+<b>Age:</b> Early Twenties<br><br>
+<b>Birthdate:</b> April 26th<br><br>
+<b>Gender:</b> Cisgender Female<br><br>
+<b>Sexuality:</b> Bisexual<br><br>
+<b>Relationship:</b> Taken (<a target="_blank" href="http://atomic.chatango.com">Miles Parker</a>)<br><br>
+<b>Species:</b> Human<br><br>
+<b>Race:</b> Irish-American<br><br>
+<b>Occupation:</b> Student at <a target="_blank" href="http://ulreich.weebly.com">Ulreich University</a><br><br>
+<b>Height:</b> 5'9"<br><br>
+<b>Weight:</b> 130 lbs.
+</div>
 <div id="tabbox1">
-<span class="tabs1" onClick="changeNavigation ('tab1');changeNavigation1 ('tab2')">History</span>
-<span class="tabs1" onClick="changeNavigation ('tab3');changeNavigation1 ('tab4')">Inventory</span>
-<span class="tabs1" onClick="changeNavigation ('tab5');changeNavigation1 ('tab6')">Universal Spells</span>
+<span class="tabs" onClick="changeNavigation ('tab1');changeNavigation1 ('tab2')">Details</span>
 </div>
 <div id="tabbox2">
-<span class="tabs2" onClick="changeNavigation ('tab7');changeNavigation1 ('tab8')">Alterglyphics</span>
-<span class="tabs2" onClick="changeNavigation ('tab9');changeNavigation1 ('tab10')">Transmutation</span>
-<span class="tabs2" onClick="changeNavigation ('tab11');changeNavigation1 ('tab12')">Ritualism</span>
+<span class="tabs" onClick="changeNavigation ('tab3');changeNavigation1 ('tab4')">History</span>
 </div>
-<div id="imgbox">
-<img style="height:100%;width:100%;" src="https://i.imgur.com/Wn39VJ0.png"/>
+<div id="tabbox3">
+<span class="tabs" onClick="changeNavigation ('tab5');changeNavigation1 ('tab6')">Inventory</span>
+</div>
+<div id="tabbox4">
+<span class="tabs" onClick="changeNavigation ('tab7');changeNavigation1 ('tab8')">Universals</span>
+</div>
+<div id="tabbox5">
+<span class="tabs" onClick="changeNavigation ('tab9');changeNavigation1 ('tab10')">Medium</span>
+</div>
+<div id="tabbox6">
+<span class="tabs" onClick="changeNavigation ('tab11');changeNavigation1 ('tab12')">Alterglyphics</span>
+</div>
+<div id="tabbox7">
+<span class="tabs" onClick="changeNavigation ('tab13');changeNavigation1 ('tab14')">Transmutation</span>
+</div>
+<div id="tabbox8">
+<span class="tabs" onClick="changeNavigation ('tab15');changeNavigation1 ('tab16')">Ritualism</span>
+</div>
+<div id="creditbox">
+<b>Theme:</b> Created by <a href="http://fae.chatango.com">Fae</a> 02/01/2019<br>
+<b>Music:</b> <a target="_blank" href="https://www.youtube.com/watch?v=XUClIslXKZo">Crystals by Of Monsters and Men</a><br>
+None of the images used are of my creation, all rights--and respects--to the proper owners. Ask for links to real artists.
+</div>
+</div>
+
+<div id="pic">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/Q48Y9zX.jpg"/>
 </div>
 <div id="content">
-<h1>Basic Information</h1>
-<b>Name:</b> Claire O'Connor<br>
-<b>Age:</b> Early Twenties<br>
-<b>Birthdate:</b> April 26th<br>
-<b>Gender:</b> Cisgender Female<br>
-<b>Sexuality:</b> Bisexual<br>
-<b>Relationship:</b> Taken (<a target="_blank" href="http://atomic.chatango.com">Miles Parker</a>)<br>
-<b>Species:</b> Human<br>
-<b>Race:</b> Irish-American<br>
-<b>Trees:</b> Forcient: Transmutation & Ritualism<br>
-<b>Occupation:</b> Student at <a target="_blank" href="http://ulreich.weebly.com">Ulreich University</a><br>
-<b>Height:</b> 5'9"<br>
-<b>Weight:</b> 130 lbs.<br><br>
 <h1>Detailed Information</h1>
 <b>Appearance</b><br>
 Natural beauty shapes her entire appearance. Her physique--while still having defined feminine curves--is more on the slim side. Soft perfect porcelain skin perfectly stretches across her body. Her face is more rounded, with a soft jaw and gently pronounced cheekbones. A cute button nose and full pink lips rest under a pair of big green eyes that almost have an inhuman glow to them. Dark black hair frames her beautiful face and falls down to her mid-back.
@@ -158,17 +392,32 @@ An extremely shy girl who tends to be completely silent if she feels overwhelmed
 </div>
 
 <div id="tab1">
+<h1>Detailed Information</h1>
+<b>Appearance</b><br>
+Natural beauty shapes her entire appearance. Her physique--while still having defined feminine curves--is more on the slim side. Soft perfect porcelain skin perfectly stretches across her body. Her face is more rounded, with a soft jaw and gently pronounced cheekbones. A cute button nose and full pink lips rest under a pair of big green eyes that almost have an inhuman glow to them. Dark black hair frames her beautiful face and falls down to her mid-back.
+<br><br>
+<b>Attire</b><br>
+Claire's fashion sense is very modest, finding her in short skirts and v-necks is a very very rare occasion. She prefers leggings and jeans as well as long-sleeved sweaters and cute fashionable jackets. Scarves and hats are common accessory choices.
+<br><br>
+<b>Personality</b><br>
+An extremely shy girl who tends to be completely silent if she feels overwhelmed by the presence of others. She is very humble, gentle, and sweet but that can often cause her some problems. It makes her easy to manipulate. She has the strong maternal desire to care for broken things and wants to see the good in everyone no matter what.
+</div>
+<div id="tab2">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/Q48Y9zX.jpg"/>
+</div>
+
+<div id="tab3">
 <h1>How She Came To Be...</h1>
 Claire O'Connor was born to Jane and Patrick O'Connor early on the morning of April 26th. Already the two had a son named Ryan who was just over a year her elder. The two of them had a pretty rough life at such a young age, before the girl even learned to take her first steps their father walked out on their family, never to be heard from again. It was rumored that an obsession with music was what drove him away. As Claire got older, the absence of her father drew her and her elder brother much closer together. He developed a very protective bias around his sister, while she became almost completely dependent on his company around other people. Unfortunately there came a time when she had to learn how to deal with the world without him by her side.<br><br>
 What happened was that their mother held a deep grudge against their father for leaving her, and Ryan was very much like his father in many ways, especially with his love for music. He became a very talented musician which angered her to the point of even kicking him out of the house. While Claire was technically forbidden to see him, he stayed with an uncle of theirs who took advantage of the poor boy's situation in almost every way imaginable, so the topic of running away was something commonly brought up between them. Ryan always refused his sister's begging to take her with him, and one day he really did up and leave her behind, breaking her heart. Rather than become bitter like their mother, Claire did everything she could to search for him and either stay by his side or bring him home.<br><br>
 Her search brought her deeper and deeper into the dangerous immortal world of magic where she eventually learned he was a student at a magical school, learning how to harnass his mana and cast powerful spells as he rose through the ranks. Equally ambitious, Claire pursued this school herself and eventually ended up finding not only her brother but also an unfortunate trap. Mages seeking to harm him raped and murdered the poor girl, introducing her to her first real traumatic experience. She was brought back to life by the school's most powerful Faith Mage, but the mental scars left behind was something the kind woman couldn't save her from. While Claire only sank further into her introvert behavior, Ryan only grew more protective and possessive of his sister.<br><br>
 Ironically, she ended up finding solace in the company of another young mage named Miles, and a young romance blossomed between the two of them. While Ryan's ultimate goal was to bring her back home permanently and let her live the rest of her days in the simple mortal human world, her own ambitions to equal in power to both of the most important men in her life brought her stubbornly back on the lookout for another magical academy. Eventually her search led her to a place known as Ulreich University, where she currently prepares to study the arcane arts...
 </div>
-<div id="tab2">
-<p align="center"><img style="height:90%;" src="https://i.imgur.com/4kELQ5z.jpg"/></p>
+<div id="tab4">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/kTFHuBL.png"/>
 </div>
 
-<div id="tab3">
+<div id="tab5">
 <h1>Items</h1>
 <b>Small Backpack</b><br>
 A bookbag typical of the average High Schooler to carry their materials needed around in. For Claire, it is just a small sack that currently carries general toiletries (like deodorant, hairbrush, toothbrush, etc.) and female-specific toiletries (like make-up, perfume, etc.).
@@ -185,22 +434,12 @@ Claire carries with her a water-skin satchel that has been repurposed to hold sa
 <h1>Weapons</h1>
 <b>Small Dagger</b><br>
 Claire always carries a small blade within her purse that is retractable into its hilt much like a box knife. This particular weapon has no magic qualities and is only made of iron.
-<br><br>
-<h1>High Archmage Medium</h1>
-<b>Light's Vision</b><br>
-A broadsword, created out of what seems to be a magical crystal. This crystal is extremely durable and near impossible to crack or break (Diamond toughness), and acts as a perfect material for a bladed weapon, however it is also able to shift into a small paint brush whenever needed. While in paintbrush form, channeling mana through the object will give the mana a solid form (constructs of steel grade) that can be used like ink to draw runes in the air.<br>
-(Runes drawn into existence with the paintbrush take two posts to activate, even if the runes themselves usually only take a single post)<br>
-The blade's original owner used the crystal to refract light through for a boost to his Photokinetics spells, and while light will still refract through the strange artifact it won't offer its new owner any special abilities. Instead, the blade acts as a conduit for Claire's magic and passes as an extension of her being (meaning with spells that require physical contact she can use the blade to make that contact instead of her flesh so long as she is at least touching the sword), as well as a special catalyst that allows her to filter base gases (such as oxygen) through the blade, allowing her to transmute these gases and use them as base materials for any of her spells so long as the sword is being used as a catalyst for her magic. (This only includes spells currently in her inventory, including the ones getting approved for her High Archmage slots, but any spells afterward would require to be specifically pitched to work in tangent with this ability.)<br>
-She is able to transmute the material of the blade into molten glass (hot enough to melt through Diamond, and despite technically being a liquid the blade still fully retains its shape) but when the ability is deactivated/cancelled the blade reverts to its normal material and shape.<br>
-This superheated molten form can splatter drops of itself when the blade is swung in an arch (splash zone radius of up to fifteen feet, able to travel up to thirty feet in a specified direction away from the caster) and so long as these drops don't get further than forty feet from the caster she can transmute their state of matter, or, use them as transmutable base materials to make any of her other spells currently available to her. (This only includes spells currently in her inventory, including the ones getting approved for her High Archmage slots, but any spells afterward would require to be specifically pitched to work in tangent with this ability.)<br>
-When using the tip of the blade to carve out or draw runes, Claire receives a moderate reduction to the typical mana cost (35%) for casting the spells she is crafting (this is only 15% for Archmage spells, intended as a Ritualism specific buff).
-<br><br>
 </div>
-<div id="tab4">
-<p align="center"><img style="height:90%;" src="https://i.imgur.com/eM8oBaz.png"/></p>
+<div id="tab6">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/r1Ht6VB.png"/>
 </div>
 
-<div id="tab5">
+<div id="tab7">
 <h1>Mana Manipulation</h1>
 <i>"The most basic class of magic, involving the direct manipulation of Mana, is available to all mages. Raw Mana is a mundane source of magic with no special qualities, but offers some level of versatility. The amount of Mana a mage is capable of replenishing or expelling is dependent on their overall level. (Most spells taught in class are under this tree. Spells taught in class must be on your character sheet, and any alterations or upgrades to taught spells must be discussed with a professor.)"</i><br><br>
 <b>Natural Aura</b><br>
@@ -209,11 +448,25 @@ Claire's physical manifestation of her mana causes the strange magic substance t
 <br><br>
 Having gathered the Universal Spells from various mentors and teachers, as well as attending classes, Claire has managed to learn all (save for Mana Graft) of the spells available to students of her rank. To find the exact spells and descriptions you can see them all by clicking <a target="_blank" href="https://tyler-fowlow96.wixsite.com/spellbook">this link</a>.
 </div>
-<div id="tab6">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/9W9jvKw.gif"/>
+<div id="tab8">
+<img style="width:100%;height:100%;" src="https://media.giphy.com/media/7NLqWNlCswuoM0qaXj/giphy.gif"/>
 </div>
 
-<div id="tab7">
+<div id="tab9">
+<h1>High Archmage Medium</h1>
+<b>Light's Vision</b><br>
+A broadsword, created out of what seems to be a magical crystal. This crystal is extremely durable and near impossible to crack or break (Diamond toughness), and acts as a perfect material for a bladed weapon, however it is also able to shift into a small paint brush whenever needed. While in paintbrush form, channeling mana through the object will give the mana a solid form (constructs of steel grade) that can be used like ink to draw runes in the air.<br>
+(Runes drawn into existence with the paintbrush take two posts to activate, even if the runes themselves usually only take a single post)<br>
+The blade's original owner used the crystal to refract light through for a boost to his Photokinetics spells, and while light will still refract through the strange artifact it won't offer its new owner any special abilities. Instead, the blade acts as a conduit for Claire's magic and passes as an extension of her being (meaning with spells that require physical contact she can use the blade to make that contact instead of her flesh so long as she is at least touching the sword), as well as a special catalyst that allows her to filter base gases (such as oxygen) through the blade, allowing her to transmute these gases and use them as base materials for any of her spells so long as the sword is being used as a catalyst for her magic. (This only includes spells currently in her inventory, including the ones getting approved for her High Archmage slots, but any spells afterward would require to be specifically pitched to work in tangent with this ability.)<br>
+She is able to transmute the material of the blade into molten glass (hot enough to melt through Diamond, and despite technically being a liquid the blade still fully retains its shape) but when the ability is deactivated/cancelled the blade reverts to its normal material and shape.<br>
+This superheated molten form can splatter drops of itself when the blade is swung in an arch (splash zone radius of up to fifteen feet, able to travel up to thirty feet in a specified direction away from the caster) and so long as these drops don't get further than forty feet from the caster she can transmute their state of matter, or, use them as transmutable base materials to make any of her other spells currently available to her. (This only includes spells currently in her inventory, including the ones getting approved for her High Archmage slots, but any spells afterward would require to be specifically pitched to work in tangent with this ability.)<br>
+When using the tip of the blade to carve out or draw runes, Claire receives a moderate reduction to the typical mana cost (35%) for casting the spells she is crafting (this is only 15% for Archmage spells, intended as a Ritualism specific buff).
+</div>
+<div id="tab10">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/eM8oBaz.png"/>
+</div>
+
+<div id="tab11">
 <p align="center"><i>Alterglyphics, High Archmage</i></p>
 <i>An entirely new Magic Tree, compromised of Transmutation and Ritualism. With both of them combined, Claire has managed to develop the following epic spells:</i>
 <br><br>
@@ -263,13 +516,12 @@ The fog can be dispelled or pushed away by magical means so long as the spells d
 <b>Noclip (Upgrade)</b><br>
 The caster is capable of using the old version of No Clip, transmuting air into clear aerogel-like levitating blocks just strong enough to hold her weight, for up to sixty feet above the ground (or most recent surface that actually holds her weight she's been in contact with). She can also, however, use the upgraded Archmage version as well, which allows her to transmute a rune into/out of any diamond-or-lesser substance (diamond for nonmagic, tungsten for any magically-imbued objects/constructs). If this rune is imbued into a surface and activated she will be able to manipulate the solid state of said material into a liquid one in any variation of space (within a seventy foot radius of the source) so long as she is within sixty feet of the rune herself. Even in a liquid state, the surface will retain its normal shape and appearance, even its normal temperature will not change. <br>
 Should the rune be made out of air, however, it will create a levitating platform that the caster can shift the nature of at will (in any variation along the material's surface/makeup) that will allow physical entities or objects she can acknowledge are there to either pass through the surface as though it were a liquid or stay strong and firm. Regardless of whether or not the surface is solid, her magic allows it to retain its shape and appearance so that it may seem like a solid in appearance despite being transmuted into a liquid form. The platform can be big enough to make a solid diamond-grade formation that covers up to a sixty foot radius (the source being the rune at its epicenter) and if stretched out to its full extent will remain completely stationary. Should the platform be made smaller, however (limited to only measuring a ten foot radius at the most for this second part specifically), the caster may telekinetically control its levitational abilities, allowing her air maneuverability for up to seventy feet above ground, at three times average human speeds. (Caster's personal speed stats do not affect speed stats for levitation.)
-<br><br>
 </div>
-<div id="tab8">
-<img style="width:100%;height:100%;" src="https://i.pinimg.com/originals/73/78/1f/73781f171e3d4cf6709b093eaafc9b1d.jpg"/>
+<div id="tab12">
+<img style="width:100%;height:100%;" src="https://media.giphy.com/media/31ShPxDFFgfyTn41dx/giphy.gif"/>
 </div>
 
-<div id="tab9">
+<div id="tab13">
 <p align="center"><i>Forcient: Transmutation, High Archmage</i></p>
 <i>"Forcient is a tree which focuses on the physical constants and laws of the universe, and how one may manipulate these constants and laws to suit their agenda. Forcient is divided into three different branches, each of which controls a small array of forces. Transmutors are a special breed among Forcient mages; rather than control a specific force, these mages wield the power of change. A Transmutor may change the shape, form, and type of matter with their spells. These mages must of course follow the general rule of nature: One cannot make something from nothing, and one may not simply lose matter through a transmutation. High caliber Transmutors may even dissemble matter at a molecular level."</i>
 <br><br>
@@ -308,13 +560,12 @@ This spell allows the caster to transmute physical objects and materials (so lon
 <br><br>
 <b>Window Pane (Upgrade)</b><br>
 This spell allows the caster to transmute physical objects and materials (so long as they are only cobalt in toughness or lower, aren't made from higher ranking spells, and aren't any bigger than the caster in size or weight) into panes of molten glass hot enough to melt through cobalt magic-constructs or nonmagic items (this scales naturally until reaching Titanium at High Mage rank). While these panes cannot be used as projectiles they can remain active within fifteen feet of the caster. When deactivated or "broken" the panes will revert to the base material they were transmuted from. The caster can have a total of two of these panes active at once, and they can only be up to six feet in height and three feet in width at the most. These panes can only defend against solid existing objects and will not be able to deter pure energy substances whatsoever.
-<br><br>
 </div>
-<div id="tab10">
-<p align="center"><img style="height:90%;" src="http://www.freeiconspng.com/uploads/glass-orb-png-24.png"/></p>
+<div id="tab14">
+<img style="width:100%;height:100%;" src="https://media.giphy.com/media/58FMyFUXlEbu2lYyGH/giphy.gif"/>
 </div>
 
-<div id="tab11">
+<div id="tab15">
 <p align="center"><i>Ritualism, Mage</i></p>
 <i>"Magic which recreates several forms of magic by imbuing Words of Power with Mana in the form of inscribed runic symbols. A mage of this tree may harness any tree of magic, but only in its lesser forms. A jack of all trades, ace of none tree, runes may be created for singular use (such as powerful explosions or traps), or cast upon an object to provide a spell of multiple uses (although the rune must be re-carved from time to time). Although this tree may start off as inherently weak, it's sheer utility and flexible spell roster make it an excellent choice for a well rounded mage."</i>
 <br><br>
@@ -343,10 +594,9 @@ When activated, this rune will send out very gentle waves of air in all directio
 <br><br>
 <b>Burst of Speed</b><br>
 A permanent rune Claire plans to put on her body that temporarily doubles her reaction time and physical speed. The sigil can only remain active for a total of three rotations before more mana would be required to reactivate it. (Requires a cool down of two posts as well.)
-<br><br>
 </div>
-<div id="tab12">
-<p align="center"><img style="height:90%;" src="http://i.imgur.com/mtPuTlV.png"/></p>
+<div id="tab16">
+<img style="width:100%;height:100%;" src="https://media.giphy.com/media/NlHmKbrF5zyBKE6sLB/giphy.gif"/>
 </div>
 
 <embed style="height: 0%; width: 0%;"src="Claire.mp3" autostart="true" loop="true">
